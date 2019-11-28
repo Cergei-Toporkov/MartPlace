@@ -7,7 +7,25 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #555555;
+}
+a {
+  color: $link;
+  text-decoration: none;
+  display: inline-block;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .container {
-  min-width: 1070px;
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
