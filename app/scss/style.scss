@@ -223,3 +223,219 @@
   height: 95px;
   width: 1080px;
 }
+
+// end choice
+
+// start features
+
+.features__inner {
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+  margin: 186px 0 120px;
+  display: flex;
+  &-box {
+    width: 390px;
+    img {
+      padding: 40px 0 34px;
+    }
+    p {
+      line-height: 30px;
+      margin: 0;
+      padding: 25px 39px 50px 41px;
+    }
+    &-title {
+      font-size: 24px;
+
+      color: #000000;
+    }
+  }
+  &-box:nth-child(2) {
+    width: 360px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    p {
+      padding: 25px 25px 55px;
+    }
+  }
+}
+
+// end features
+
+// start slider
+
+.slider {
+  padding: 150px 0 120px;
+  background-color: $bg;
+  position: relative;
+}
+.slider__top {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 33px 30px;
+  &-arrows {
+    width: 110px;
+    height: 45px;
+    background-color: #7347c1;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+  }
+  &-prev,
+  &-next {
+    width: 8px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-position: -2px 0;
+    background-size: cover;
+    position: absolute;
+    top: 15px;
+  }
+  &-prev {
+    left: 25px;
+  }
+  &-next {
+    right: 25px;
+  }
+}
+
+.slider__item {
+  display: flex !important;
+  border-radius: 4px;
+  width: 100%;
+  min-height: 450px;
+  box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+  &-img {
+    width: 555px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &-description {
+    background-color: #fff;
+    max-width: 585px;
+    padding: 45px 60px 24px 50px;
+    p {
+      font-weight: 400;
+      line-height: 30px;
+      padding-top: 25px;
+      margin: 0;
+    }
+  }
+  &-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+  }
+  &-categories {
+    font-size: 15px;
+    padding: 35px 0 45px;
+    border-bottom: 1px solid #ececec;
+    ul {
+      display: flex;
+      li {
+        padding: 5px 14px 5px 17px;
+        background-color: #f1f3f6;
+        border-radius: 20px;
+        & + li {
+          margin-left: 7px;
+        }
+      }
+    }
+  }
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin: 24px 0 0 0;
+    .counter {
+      display: flex;
+      align-items: center;
+      height: 30px;
+      width: 100%;
+      width: 365px;
+    }
+    .price {
+      padding: 6px 18px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #fff;
+      background-color: $decor;
+      border-radius: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .like {
+      font-size: 15px;
+      position: relative;
+      padding-left: 45px;
+      &::before {
+        content: "";
+        background-image: url(../images/icons/lnr-heart.svg);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 16px;
+      }
+    }
+    .cart {
+      font-size: 15px;
+      position: relative;
+      color: #0674ec;
+      padding-left: 42px;
+      &::before {
+        content: "";
+        background-image: url(../images/icons/lnr-cart.svg);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 14px;
+      }
+    }
+  }
+}
+.slider__item-appointment {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+  height: 30px;
+  span {
+    padding: 8px 0 6px 38px;
+    display: inline-block;
+    color: #000;
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url(../images/author.png);
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  .wp {
+    padding: 8px 0 6px 45px;
+    color: #7347c1;
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url(../images/wordress.png);
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      left: 20px;
+      top: 10px;
+    }
+  }
+}
