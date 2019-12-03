@@ -17,6 +17,11 @@ a {
   color: $link;
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
+  outline: none;
+}
+p {
+  margin: 0;
 }
 ul,
 li {
@@ -24,6 +29,7 @@ li {
   padding: 0;
   list-style: none;
 }
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -34,7 +40,9 @@ li {
   font-weight: 500;
   color: #000;
 }
-.slider__item-info-rateyo {
+
+.slider__item-info-rateyo,
+.product__item-info-rateyo {
   display: flex;
   justify-content: center;
   align-items: center;
