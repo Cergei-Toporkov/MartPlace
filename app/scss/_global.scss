@@ -1,51 +1,98 @@
 html {
-  box-sizing: border-box;
+ box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+ box-sizing: inherit;
 }
+html,
 body {
-  font-family: "Quicksand", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #555555;
+ height: 100%;
+}
+.wrapper {
+ display: flex;
+ flex-direction: column;
+ min-height: 100%;
+}
+.content {
+ flex: 1 0 auto;
+}
+.footer {
+ flex: 0 0 auto;
+}
+
+body {
+ font-family: "Quicksand", sans-serif;
+ font-size: 16px;
+ font-weight: 400;
+ color: #555555;
 }
 a {
-  color: $link;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  outline: none;
+ color: $link;
+ text-decoration: none;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
 }
 p {
-  margin: 0;
+ margin: 0;
 }
 ul,
 li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+button {
+ outline: none;
+ cursor: pointer;
+}
+input {
+ outline: none;
 }
 
 .container {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
+ max-width: 1170px;
+ margin: 0 auto;
+ padding: 0 15px;
 }
 .title {
-  font-size: 30px;
-  font-weight: 500;
-  color: #000;
+ font-size: 30px;
+ font-weight: 500;
+ color: #000;
 }
 
 .slider__item-info-rateyo,
 .product__item-info-rateyo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90px;
-  height: 15px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 90px;
+ height: 15px;
+}
+
+.breadcrumbs__list {
+ li {
+  a {
+   color: #fff;
+  }
+  display: inline-block;
+  position: relative;
+  & + li {
+   &::before {
+    content: "/";
+    position: absolute;
+    left: -14px;
+    color: #fff;
+   }
+   &:last-child {
+    a,
+    span {
+     color: #bfcad7;
+    }
+   }
+  }
+ }
 }
